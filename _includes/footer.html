@@ -1,0 +1,42 @@
+<!--FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row about-category">
+      <div class="twelve columns">
+        <div class="about">
+          <div class="about-social">
+            <ul>
+            {% if site.email_username %}
+              <li><a href="mailto:{{ site.email_username }}">Email</a></li>
+            {% endif %}
+            {% if site.facebook_username %}
+              <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            {% endif %}
+            {% if site.twitter_username %}
+              <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            {% endif %}
+            {% if site.github_username %}
+              <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            {% endif %}
+            {% if site.instagram_username %}
+              <li><a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            {% endif %}
+            {% if site.youtube_username %}
+              <li><a href="https://youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            {% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="twelve columns">
+        <div class="copyright">
+          &copy; {{ site.time | date: '%Y' }} {{ site.copyright_name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--END FOOTER -->

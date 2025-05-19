@@ -1,57 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Hope's Horse Therapy
-subtitle: Helping horses one horse at a time
+subtitle: Helping Horses - One Horse at a Time
 email: janet@hopeshorsetherapy.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Dedicated to improving the lives of horses by releasing tension and increasing 
   their range of motion through one-on-one bodywork. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hopeshorsetherapy.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+
+email_username: janet@hopeshorsetherapy.com
+twitter_username:
+facebook_username: HopesHorseTherapy
+instagram_username: hopeshorsetherapy 
+youtube_username: "@HopesHorseTherapy"
+your_name: Janet & Hobbes # Your Name for About
+about_yourself: "Duis interdum tincidunt risus. Integer a pellentesque nulla, ut tempus nunc. Mauris sed tortor vitae leo ullamcorper suscipit. Donec dignissim sollicitudin rutrum. Nam eleifend fermentum neque, a dictum velit. Nullam malesuada, nulla a dapibus efficitur, metus tortor sodales dui, eu luctus urna eros nec ipsum. Suspendisse id neque tristique, efficitur orci ut, blandit libero. Curabitur pellentesque condimentum ipsum, sed fermentum diam dictum ac. Curabitur eu aliquam neque, eu vulputate ipsum. Aliquam erat volutpat."
+copyright_name: Hope's Horse Therapy
 
 # Build settings
+theme: null
+
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-paginate
 
-remote_theme: deeneshchowdhary/Handsomely-Jekyll
+markdown: kramdown
+paginate: 5
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - README.md
+  - tmp/
