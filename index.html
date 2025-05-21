@@ -1,38 +1,38 @@
 ---
-layout: page
-description: "a handome Typography"
+layout: default
+title: Home
 ---
-{% for post in paginator.posts %}
-        <div class="post-preview">
-            <header class="post-header">
-              <div class="post-title">
-                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </div>
-              <div class="post-subtitle">
-                Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-              </div>
-            </header>
 
-            <a href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/assets/images/{{ post.feature }}" class="u-full-width"/></a>
-        
-            {% if post.subtitle %}
-            <article class="pre-article">  
-              {{ post.subtitle }}
-            </article>
-             {% endif %}
-           <div class="post-excerpt">
-              <a href="{{ post.url | prepend: site.baseurl }}">Continue Reading &rarr;</a>
-            </div>
+<section>
+  <div class="container">
+    <div class="row about-category">
+      <div class="twelve columns">
+        <div class="about">
+          <h3>Welcome</h3>
+
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap">
+            <img src="{{ site.baseurl }}/assets/images/hobbes_home.jpg" style="width: 25%;" alt="Janet with a horse sticking it's tongue out">
+            <img src="{{ site.baseurl }}/assets/images/snickers.jpg" style="width: 25%;" alt="Janet with a big smile standing next to a horse white blaze">
+          </div>
+          
+
+          <div class="about-title">
+            Janet with Hope's Horse Therapy
+          </div>
+
+          <div class="about-body">
+            <p><strong>Bodywork for Horses using advanced Masterson Method modalities</strong></p>
+            <p>Call or Text: <a href="tel:8325546988">832-554-6988</a><br>
+            Email: <a href="mailto:janet@HopesHorseTherapy.com">janet@HopesHorseTherapy.com</a></p>
+
+            <p><strong>Mission</strong> — Helping one horse at a time through advanced Masterson Method bodywork. Dedicated to improving each horse’s well-being by releasing tension and enhancing range of motion through compassionate, one-on-one care.</p>
+
+            <p><strong>Vision</strong> — Doing my part to create a world where horses thrive—free from tension and physical restriction—through skilled, compassionate bodywork.</p>
+
+            <p><em>Please note:</em> I am not a veterinarian and I cannot diagnose or treat illnesses or lameness. Bodywork is not a substitute for veterinary care of your horse.</p>
+          </div>
         </div>
-{% endfor %}    
-        <hr>
-        {% if paginator.total_pages > 1 %}
-        <div class="pager">
-          {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button u-pull-left">&larr; Newer </a>
-          {% endif %}
-    {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button u-pull-right">Older &rarr;</a>
-           {% endif %}
-        </div>
-        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
