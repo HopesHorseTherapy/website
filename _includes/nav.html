@@ -17,7 +17,7 @@
           <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/">Home</a></li>
             {% for page in site.pages %}
               {% if page.title %}
-		            {% if page.url != '/404.html' %}
+		            {% if page.url != '/404.html' and page.url != '/' %}
                  <li class="navbar-item">
                   <a class="navbar-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
