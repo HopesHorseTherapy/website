@@ -12,9 +12,6 @@ a{
     text-decoration: none;
     color:#222222;
 }
-.navbar{
-    display: none;
-}
 .site-branding{
     text-align: center;
     padding:1rem;
@@ -126,6 +123,11 @@ a{
   padding: 0;
 }
 
+.navbar-item {
+  display: inline-block; /* <- horizontal */
+  margin-right: 1rem;    /* spacing between items */
+}
+
 .navbar-link {
   display: block;
   padding: 1rem;
@@ -135,7 +137,7 @@ a{
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  /* Navbar */
+    /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
   .navbar,
@@ -155,19 +157,18 @@ a{
     list-style: none;
     margin-bottom: 0; }
   .navbar-item {
-    position: relative;
-    float: left;
-    margin-bottom: 0; }
+    margin-right: 35px;
+  }
+
   .navbar-link {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: .2rem;
-    margin-right: 35px;
-    text-decoration: none;
     line-height: 6.5rem;
-    color: #222; }
-  .navbar-link.active {
-    color: #33C3F0; }
+  }
 
+  .navbar-link.active {
+    color: #33C3F0;
+  }
 }
