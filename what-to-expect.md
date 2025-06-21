@@ -28,4 +28,4 @@ While you're always welcome to stay nearby, I’ve found sessions are most effec
 Contact me through a phone call, text, or email to book your first session. I'm excited to work with your horse and help them move freely and comfortably.
 
 
-*We take the time to ensure each horse is comfortable, relaxed, and receiving the most benefit from their session. For safety, some areas may be address less directly based on your horse's training and comfort level. For example, if a horse cannot safely lift a hind leg, alternative techniques will be used.
+*We take the time to ensure each horse is comfortable, relaxed, and receiving the most benefit from their session. For safety, some areas may be address less directly based on your horse's training and comfort level. For example, if a horse cannot safely lift a hind leg, alternative techniques will be used..
