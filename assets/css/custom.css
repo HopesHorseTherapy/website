@@ -112,6 +112,27 @@ a{
 }
 }
 
+/* Always apply these (mobile + desktop) */
+.navbar {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  display: block;
+  padding: 1rem;
+  color: #222;
+  text-decoration: none;
+}
+
 /* Larger than tablet */
 @media (min-width: 750px) {
   /* Navbar */
