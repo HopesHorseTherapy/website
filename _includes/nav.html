@@ -1,33 +1,27 @@
-<header>
+<header class="site-header">
   <div class="container">
-    <div class="row">
-      <div class="twelve columns">
-        <div class="site-branding">
-          <div class="site-title">
-            <a href="{{ site.baseurl }}/"><h1>{{ site.title }}</h1></a>
-            <a href="{{ site.baseurl }}/"><p>{{ site.subtitle }}</p></a>
-          </div>
-          <div class="site-description">
-            <p>{{ site.site-description }}</p>
-          </div>
-        </div>
-        <nav class="navbar">
-      <div class="container">
+    <div class="header-shell">
+      <div class="site-branding">
+        <a class="brand-link" href="{{ site.baseurl }}/" aria-label="{{ site.title }}">
+          <span class="brand-kicker">Equine Bodywork</span>
+          <span class="brand-title">{{ site.title }}</span>
+          <span class="brand-subtitle">{{ site.subtitle }}</span>
+        </a>
+      </div>
+      <nav class="navbar" aria-label="Primary">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/">Home</a></li>
-            {% for page in site.pages %}
-              {% if page.title %}
-		            {% if page.url != '/404.html' and page.url != '/' %}
-                 <li class="navbar-item">
+          {% for page in site.pages %}
+            {% if page.title %}
+              {% if page.url != '/404.html' and page.url != '/' %}
+                <li class="navbar-item">
                   <a class="navbar-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 </li>
               {% endif %}
             {% endif %}
           {% endfor %}
         </ul>
-      </div>
-    </nav>
-      </div>
+      </nav>
     </div>
   </div>
 </header>

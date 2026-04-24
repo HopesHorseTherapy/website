@@ -1,42 +1,28 @@
-<!--FOOTER -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="row about-category">
-      <div class="twelve columns">
-        <div class="about">
-          <div class="about-social">
-            <ul>
-            {% if site.email_username %}
-              <li><a href="mailto:{{ site.email_username }}">Email</a></li>
-            {% endif %}
-            {% if site.facebook_username %}
-              <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            {% endif %}
-            {% if site.twitter_username %}
-              <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            {% endif %}
-            {% if site.github_username %}
-              <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            {% endif %}
-            {% if site.instagram_username %}
-              <li><a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            {% endif %}
-            {% if site.youtube_username %}
-              <li><a href="https://youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            {% endif %}
-            </ul>
-          </div>
-        </div>
+    <div class="footer-shell">
+      <div class="footer-copy">
+        <p class="footer-title">{{ site.title }}</p>
+        <p class="footer-text">Compassionate bodywork focused on helping horses release tension, move more freely, and feel their best.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:8325546988">Call or Text: 832-554-6988</a>
+        <a href="mailto:{{ site.email_username }}">{{ site.email_username }}</a>
+      </div>
+      <div class="footer-social">
+        {% if site.facebook_username %}
+          <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        {% endif %}
+        {% if site.instagram_username %}
+          <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram</a>
+        {% endif %}
+        {% if site.youtube_username %}
+          <a href="https://youtube.com/{{ site.youtube_username }}" target="_blank" rel="noopener noreferrer">YouTube</a>
+        {% endif %}
       </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="twelve columns">
-        <div class="copyright">
-          &copy; {{ site.time | date: '%Y' }} {{ site.copyright_name }}
-        </div>
-      </div>
+    <div class="copyright">
+      &copy; {{ site.time | date: '%Y' }} {{ site.copyright_name }}
     </div>
   </div>
 </footer>
-<!--END FOOTER -->

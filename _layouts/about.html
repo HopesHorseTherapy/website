@@ -2,26 +2,22 @@
 layout: default
 ---
 
-<!-- Main Content -->
-<section>
+<section class="page-section">
   <div class="container">
-    <div class="row about-category">
-      <div class="twelve columns">
-        <div class="about">
-          <h3>About Me</h3>
-          
-          <div class="profile">
-            <img src="{{ site.baseurl }}/assets/images/about.jpg" class="u-full-width" />
-          </div>
-          
-          <div class="about-title">
-            {{ site.your_name }}
-          </div>
-          <div class="about-body">
-            {{ content }}
-          </div>
+    <div class="profile-layout">
+      <div class="profile-copy content-card">
+        <p class="section-eyebrow">About</p>
+        <h1 class="page-title">{{ page.title }}</h1>
+        <p class="profile-name">{{ site.your_name }}</p>
+        <div class="about-body">
+          {{ content }}
         </div>
       </div>
+      <aside class="profile-panel">
+        <div class="profile-image-card">
+          <img src="{{ site.baseurl }}/assets/images/about.jpg" alt="{{ site.your_name }}" class="u-full-width" />
+        </div>
+      </aside>
     </div>
   </div>
 </section>
