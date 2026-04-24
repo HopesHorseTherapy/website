@@ -293,6 +293,8 @@ input[type="button"]:focus {
 .hero-gallery {
   display: grid;
   gap: 1.6rem;
+  max-width: 44rem;
+  width: 100%;
 }
 
 .hero-image {
@@ -301,6 +303,7 @@ input[type="button"]:focus {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   overflow: hidden;
+  padding: 1.2rem;
 }
 
 .hero-image img,
@@ -310,12 +313,9 @@ input[type="button"]:focus {
   width: 100%;
 }
 
-.hero-image-large img {
+.hero-image img {
   aspect-ratio: 4 / 5;
-}
-
-.hero-image-small img {
-  aspect-ratio: 4 / 4.6;
+  border-radius: calc(var(--radius-lg) - 8px);
 }
 
 .section-heading {
@@ -499,15 +499,8 @@ input[type="button"]:focus {
   }
 
   .hero-shell {
+    align-items: start;
     grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.85fr);
-  }
-
-  .hero-gallery {
-    grid-template-columns: 1.1fr 0.9fr;
-  }
-
-  .hero-image-small {
-    margin-top: 4rem;
   }
 
   .hero-details {
