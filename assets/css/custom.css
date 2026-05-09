@@ -280,6 +280,12 @@ input[type="button"]:focus {
   font-weight: 600;
 }
 
+.detail-card-email a {
+  display: inline-block;
+  font-size: clamp(1.4rem, 1.1vw, 1.8rem);
+  white-space: nowrap;
+}
+
 .detail-label {
   color: var(--accent);
   display: block;
